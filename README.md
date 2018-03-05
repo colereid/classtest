@@ -13,10 +13,10 @@ $ cd classtest
 $ npm install (or yarn install)
 
 # test
-npm run test
+$ npm run test
 
 #lint
-npm run lint
+$ npm run lint
 ```
 
 **Notes**
