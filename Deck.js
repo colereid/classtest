@@ -45,7 +45,7 @@ class Deck {
 
   /**
    * Set the suits value.
-   * @param {array} suits in the deck.
+   * @param {array} value -  suits in the deck.
    */
   set suits(value) {
     this._suits = value;
@@ -61,7 +61,7 @@ class Deck {
 
   /**
    * Set the ranks value.
-   * @param {array} ranks of cards in the deck.
+   * @param {array} value -  ranks of cards in the deck.
    */
   set ranks(value) {
     this._ranks = value;
@@ -77,7 +77,7 @@ class Deck {
 
   /**
    * Set the cards in the deck
-   * @param {array} card objects in the deck
+   * @param {array} value - card objects in the deck
    */
   set cards(value) {
     this._cards = value;
@@ -93,7 +93,7 @@ class Deck {
 
   /**
    * Set the deltCards in the deck
-   * @param {array} delt card from the original deck
+   * @param {array} value - delt card from the original deck
    */
   set deltCards(value) {
     this._deltCards = value;
@@ -102,6 +102,11 @@ class Deck {
   /**
    * Generate the deck of cards from the suits and ranks specificed
    * @return {Array} array of card ojbects in suit rank order.
+   *         card fields:
+   *           suit: {enum:String} - suit of card
+   *           rank: {enum:String} - rank of card 
+   *           order: {Integer} - order of card in based on rank in suit.
+   *           position: {Integer} - order of card in the deck
    */
   generateDeck() {
     const cards = [];
